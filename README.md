@@ -103,6 +103,7 @@ Model Loss Graph:
 Step 10: Predict on Test Images
 •	Use model.predict to get class probabilities
 •	Display predicted and true labels
+```
 def plot_predictions(index):
     img = X_test[index]
     true_label = class_names[np.argmax(y_test[index])]
@@ -112,15 +113,19 @@ def plot_predictions(index):
     plt.title(f"True: {true_label} | Pred: {pred_label}")
     plt.axis('off')
     plt.show()
-    <img width="1004" height="470" alt="download" src="https://github.com/user-attachments/assets/2609a475-3f4f-4510-82c8-b3169d2be093" />
+```
 
+<img width="1004" height="470" alt="download" src="https://github.com/user-attachments/assets/2609a475-3f4f-4510-82c8-b3169d2be093" />
+```
 for i in range(5):
     plot_predictions(i)
-    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/60646ace-acea-4144-b3d0-de744bc75b39" />
-    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/4dd7aa6a-1375-48a9-81ba-564457f4c32a" />
-    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/7716dda9-33fe-4971-87ce-71773d4a3ad6" />
-    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/3ae18171-1bb2-428b-9976-c2bfad73a380" />
-    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/18ff8fc7-d2ab-45ca-b07c-d4bb45ecd19c" />
+```
+
+<img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/60646ace-acea-4144-b3d0-de744bc75b39" />
+<img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/4dd7aa6a-1375-48a9-81ba-564457f4c32a" />
+<img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/7716dda9-33fe-4971-87ce-71773d4a3ad6" />
+<img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/3ae18171-1bb2-428b-9976-c2bfad73a380" />
+<img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/18ff8fc7-d2ab-45ca-b07c-d4bb45ecd19c" />
 
     
    ##  Conclusion:
