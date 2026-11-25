@@ -38,6 +38,8 @@ plt.figure(figsize=(10,10))for i in range(16):
     plt.imshow(X_train[i])
 plt.xlabel(class_names[np.argmax(y_train[i])])
 plt.show()
+<img width="793" height="809" alt="download" src="https://github.com/user-attachments/assets/cfaac63c-574d-440b-a06e-294829788ea8" />
+
 Step 5: Build the CNN Model
 •	Convolutional layers extract important spatial features from images.
 •	MaxPooling reduces the feature map size and computational load.
@@ -106,22 +108,21 @@ def plot_predictions(index):
     true_label = class_names[np.argmax(y_test[index])]
     pred_probs = model.predict(np.expand_dims(img, axis=0))
     pred_label = class_names[np.argmax(pred_probs)]
-    
     plt.imshow(img)
     plt.title(f"True: {true_label} | Pred: {pred_label}")
     plt.axis('off')
     plt.show()
+    <img width="1004" height="470" alt="download" src="https://github.com/user-attachments/assets/2609a475-3f4f-4510-82c8-b3169d2be093" />
 
 for i in range(5):
     plot_predictions(i)
+    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/60646ace-acea-4144-b3d0-de744bc75b39" />
+    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/4dd7aa6a-1375-48a9-81ba-564457f4c32a" />
+    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/7716dda9-33fe-4971-87ce-71773d4a3ad6" />
+    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/3ae18171-1bb2-428b-9976-c2bfad73a380" />
+    <img width="389" height="411" alt="download" src="https://github.com/user-attachments/assets/18ff8fc7-d2ab-45ca-b07c-d4bb45ecd19c" />
+
     
-    <img width="552" height="69" alt="image" src="https://github.com/user-attachments/assets/0febb5dd-2c8b-406e-9298-e518f58ea23b" />
-    <img width="504" height="504" alt="image" src="https://github.com/user-attachments/assets/f97a0605-a07a-48aa-8909-908744ffb565" />
-    <img width="327" height="34" alt="image" src="https://github.com/user-attachments/assets/e266bb30-ee77-4765-8e08-091237edb842" />
-    <img width="554" height="168" alt="image" src="https://github.com/user-attachments/assets/e45f8b04-4822-410d-b7c4-1a5d9d6cfdca" />
-    <img width="554" height="396" alt="image" src="https://github.com/user-attachments/assets/81232b25-568e-4453-af4a-daa8ecb71eae" />
-    <img width="554" height="299" alt="image" src="https://github.com/user-attachments/assets/d91e0a8a-5280-4886-8f58-2533d33104f2" />
-    <img width="554" height="284" alt="image" src="https://github.com/user-attachments/assets/be9212f4-4e6e-4f71-b3f8-43a953665c83" />
    ##  Conclusion:
 Thus successfully implemented and trained a CNN to recognize objects across ten distinct categories using the CIFAR 10 dataset.
 
